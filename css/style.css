@@ -1,0 +1,11 @@
+header {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+nav a {
+    color: white !important;
+}
+
+footer {
+    background-color: rgb(161, 161, 161) !important;
+}
