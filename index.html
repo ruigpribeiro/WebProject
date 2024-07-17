@@ -5,78 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
-    <!-- Meu CSS -->
+    <!-- O meu CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="d-flex flex-column min-vh-100">
-    <!-- Header -->
+<body class="d-flex flex-column">
+
+    <!-- Navigation Bar -->
     <header class="sticky-top">
-        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container container-nav">
                 <a class="navbar-brand" href="/">
                     <img src="img/landing-img.png" alt="logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- Navbar Links -->
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <!-- Home Link -->
                         <li class="nav-item">
-                            <a class="nav-link active mr-5" href="index.html" title="Home">Home</a> <!-- Fixed missing closing <span> tag -->
+                            <a class="nav-link active mr-5" href="index.html" title="Home">Home</a>
                         </li>
-                        <!-- About me Link -->
                         <li class="nav-item">
-                            <a class="nav-link ml-5 mr-5" href="aboutme.html" title="About me">About me</a>
-                        </li>
-                        <!-- Portfolio Link -->
+                            <a class="nav-link ml-5 mr-5" href="#about-me" title="About me">About me</a>
+                        </li>                        
                         <li class="nav-item">
-                            <a class="nav-link ml-5 mr-5" href="portfolio.html" title="Portfolio">Portfolio</a>
+                            <a class="nav-link ml-5 mr-5" href="#portfolio" title="Portfolio">Portfolio</a>
                         </li>
                     </ul>
                     <a href="#" class="btn btn-contact contact text-dark" data-bs-toggle="modal" data-bs-target="#contactModal" title="Contact Me">Contact me</a>
                 </div>
             </div>
         </nav>
-    </header>
-
-    <!-- Conteúdo da Página -->
-    <main class="container d-flex flex-grow-1 flex-column justify-content-center align-items-center text-center">
-        <div class="container hero">
+    </header> 
+        
+    <!-- Conteúdo da Página-->
+    <main class="container min-vh-100 d-flex flex-grow-1 flex-column justify-content-center align-items-center text-center">
+        <div class="container hero d-flex text-center justify-content-center">
             <div class="row mt-5">
                 <div class="col-lg-4 foto_principal">
                     <img src="img/landing-img.png" alt="Rui" class="img-fluid">
                 </div>
                 <div class="col-lg-8 text-center title-holder mt-4">
                     <h2 class="hello d-none d-lg-block">
-                        HELLO WORLD!
-                    </h2>
+                        <span id="typed-text"></span><span class="cursor">|</span>
+                    </h2>                    
                     <div class="col-lg-12">
                         <h1>My name is <strong>Rui Ribeiro</strong></h1>
                     </div>
                     <div class="col-lg-12">
-                        <h4 class="junior">and I'm a Junior Software Developer.</h4>
+                        <h4 class="junior">I'm a Junior Software Developer.</h4>
                     </div>
                 </div>
             </div>
         </div>
+
+        <section id="about-me" class="container-fluid my-5 py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">About Me</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Profile</h3>
+                        <ul class="list-unstyled">
+                            <li><strong>Full Name:</strong> Rui Ribeiro</li>
+                            <li><strong>Current Position:</strong> Junior Software Developer</li>
+                            <li><strong>GitHub:</strong> <a href="https://github.com/seuusuario" target="_blank">github.com/seuusuario</a></li>
+                            <li><strong>Email:</strong> <a href="mailto:seuemail@example.com">seuemail@example.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Skills</h3>
+                        <ul class="list-unstyled">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Bootstrap</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="path/to/your/cv.pdf" class="btn btn-dark" download>Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="container-fluid my-5 py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">My Portfolio</h2>
+                <div class="row">
+                    <!-- Project 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/apple.jpeg" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Title 1</h5>
+                                <p class="card-text">Built with: HTML, CSS, JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/apple.jpeg"" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Title 2</h5>
+                                <p class="card-text">Built with: React, Node.js</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/apple.jpeg"" class="card-img-top" alt="Project 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Title 3</h5>
+                                <p class="card-text">Built with: Bootstrap, PHP</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/apple.jpeg"" class="card-img-top" alt="Project 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Title 4</h5>
+                                <p class="card-text">Built with: JavaScript, CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/apple.jpeg"" class="card-img-top" alt="Project 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Title 5</h5>
+                                <p class="card-text">Built with: React, Bootstrap</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/apple.jpeg"" class="card-img-top" alt="Project 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Title 6</h5>
+                                <p class="card-text">Built with: Node.js, Express</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-center text-white w-100">
-        <div class="p-4 pb-0">
+        <div class="p-3 pb-0 mb-0">
 
             <!-- Social Media -->
-            <section class="mb-4">
+            <section class="mb-1">
                 <!-- Linkedin -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
                     <i class="fab fa-linkedin-in"></i>
@@ -86,6 +189,9 @@
                     <i class="fab fa-github"></i>
                 </a>
             </section>
+        </div>
+        <div class="text-center">
+            <p class="mb-0 fs-6">Coded by Rui Ribeiro 👨‍💻</p>
         </div>
     </footer>
 
@@ -98,20 +204,22 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <!-- Your Contact Form Here -->
+                    <!-- Contact Form -->
                     <form id="contactForm" action="submit.php" method="POST">
                         <div class="mb-3">
-                            <label for="name" class="form-label">Your Name</label>
+                            <label for="name" class="form-label">Name</label>
                             <input type="text" class="form-control" id="name" name="name" required>
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Your Email</label>
+                            <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" name="email" required>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
                             <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                         </div>
+                        <div class="invalid-feedback">Invalid email</div>
+                        <div class="valid-feedback">Correct email</div>
                         <button type="submit" class="btn btn-dark">Submit</button>
                     </form>
                 </div>

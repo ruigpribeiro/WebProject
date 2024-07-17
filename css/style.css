@@ -1,30 +1,63 @@
-
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
 /* Navigation Bar */
 nav a {
     color: white !important;
 }
-
 nav img {
     height: 30px;
     width: 30px;
 }
-
 .btn-contact, .b {
     background-color: white;
-    color: #212529; /* Text color for dark mode */
-    border-color: white; /* Optionally, to remove border */
+    color: #212529;
+    border-color: white;
 }
-
 .btn-contact:hover {
-    background-color: #f0f0f0; /* Light gray background */
-    color: #212529; /* Text color for dark mode */
-    border-color: #f0f0f0; /* Matching border color */
+    background-color: #f0f0f0;
+    color: #212529;
+    border-color: #f0f0f0;
 }
 
 /* Home Page */
 main img {
     width: 60%;
 }
+
+.hero {
+    height: 70vh; 
+    align-items: center; 
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background-color: white;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+
+/* About me Section */
+#about-me {
+    background-color: #f8f9fa; 
+    padding: 50px 0;
+}
+
+/* Portfolio Section */
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
 
 /* Footer */
 footer {
