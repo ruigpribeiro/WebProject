@@ -1,11 +1,32 @@
-header {
-    background-color: rgba(0, 0, 0, 0.5) !important;
-}
 
+/* Navigation Bar */
 nav a {
     color: white !important;
 }
 
+nav img {
+    height: 30px;
+    width: 30px;
+}
+
+.btn-contact, .b {
+    background-color: white;
+    color: #212529; /* Text color for dark mode */
+    border-color: white; /* Optionally, to remove border */
+}
+
+.btn-contact:hover {
+    background-color: #f0f0f0; /* Light gray background */
+    color: #212529; /* Text color for dark mode */
+    border-color: #f0f0f0; /* Matching border color */
+}
+
+/* Home Page */
+main img {
+    width: 60%;
+}
+
+/* Footer */
 footer {
-    background-color: rgb(161, 161, 161) !important;
+    padding-bottom: 10px;
 }
