@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
+    <link rel="icon" href="img/landing-img.png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +52,9 @@
     </header> 
         
     <!-- Conteúdo da Página-->
-    <main class="container min-vh-100 d-flex flex-grow-1 flex-column justify-content-center align-items-center text-center">
+    <main class="container-fluid min-vh-100 d-flex flex-grow-1 flex-column justify-content-center align-items-center text-center">
+
+        <!-- Landing page -->
         <div class="container hero d-flex text-center justify-content-center">
             <div class="row mt-5">
                 <div class="col-lg-4 foto_principal">
@@ -70,37 +74,112 @@
             </div>
         </div>
 
-        <section id="about-me" class="container-fluid my-5 py-5 bg-light">
+        <section id="about" class="about bg-light py-5">
             <div class="container">
-                <h2 class="text-center mb-4">About Me</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h3>Profile</h3>
-                        <ul class="list-unstyled">
-                            <li><strong>Full Name:</strong> Rui Ribeiro</li>
-                            <li><strong>Current Position:</strong> Junior Software Developer</li>
-                            <li><strong>GitHub:</strong> <a href="https://github.com/seuusuario" target="_blank">github.com/seuusuario</a></li>
-                            <li><strong>Email:</strong> <a href="mailto:seuemail@example.com">seuemail@example.com</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Skills</h3>
-                        <ul class="list-unstyled">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>Node.js</li>
-                            <li>Bootstrap</li>
-                            <li>PHP</li>
-                        </ul>
-                    </div>
+                <div class="text-center">
+                    <h4 class="text-uppercase fw-bold text-dark">About Me</h4>
+                    <hr class="w-25 mx-auto"/>
+                    <h2 class="mb-4">Let me introduce myself.</h2>
                 </div>
-                <div class="text-center mt-4">
-                    <a href="path/to/your/cv.pdf" class="btn btn-dark" download>Download CV</a>
+                <div class="about-content d-flex gap-5 align-items-center h-100">
+                    <img src="img/landing-img.png" alt="" class="about-img img-fluid rounded-circle">
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos soluta odio possimus quod quam, aliquid facilis neque quasi debitis quisquam optio quibusdam ipsum in qui deleniti sit aspernatur nobis tenetur.
+                    </p>
                 </div>
             </div>
         </section>
+
+        <!-- Profile e Skills Section -->
+         <section class="profile my-6" id="about-me">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-uppercase fw-bold">Profile</h3>
+                        <p>Here is some more info about myself to help you get to know me better</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item mb-3">
+                                <h5 class="text-transform">
+                                    <i class="fas fa-user text-dark"> Full Name:</i>
+                                </h5>
+                                <p>Rui Ribeiro</p>
+                            </li>
+                            <li class="list-group-item mb-3">
+                                <h5 class="text-transform">
+                                    <i class="fas fa-calendar text-dark"> Birth Date:</i>
+                                </h5>
+                                <p>August, 1997</p>
+                            </li>
+                            <li class="list-group-item mb-3">
+                                <h5 class="text-transform">
+                                    <i class="fas fa-building text-dark"> Current Position:</i>
+                                </h5>
+                                <p>Student - Software Developer</p>
+                            </li>
+                            <li class="list-group-item mb-3">
+                                <h5 class="text-transform">
+                                    <i class="fas fa-home text-dark"> Github:</i>
+                                </h5>
+                                <p>github.com/ruigpribeiro</p>
+                            </li>
+                            <li class="list-group-item mb-3">
+                                <h5 class="text-transform">
+                                    <i class="fas fa-envelope text-dark"> Email:</i>
+                                </h5>
+                                <p>ruiguilhermeribeiro@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="col-md-6">
+                        <h3 class="text-uppercase fw-bold">Skills</h3>
+                        <p>Here is a list of my skills with these dumb percentages</p>
+                        <!-- Java -->
+                        <h5><i class="fas fa-check"></i>Java</h5>
+                        <div class="progress mb-4" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-dark" style="width: 100%;">100%</div>
+                        </div>
+                        <!-- HTML & CSS -->
+                        <h5><i class="fas fa-check"></i>HTML & CSS</h5>
+                        <div class="progress mb-4" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-dark" style="width: 100%;">100%</div>
+                        </div>
+                        <!-- Bootstrap -->
+                        <h5><i class="fas fa-check"></i>Bootstrap</h5>
+                        <div class="progress mb-4" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-dark" style="width: 10%;">10%</div>
+                        </div>
+                        <!-- JavaScript -->
+                        <h5><i class="fas fa-check"></i>JavaScript</h5>
+                        <div class="progress mb-4" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-dark" style="width: 100%;">100%</div>
+                        </div>
+                        <!-- PHP -->
+                        <h5><i class="fas fa-check"></i>PHP</h5>
+                        <div class="progress mb-4" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-dark" style="width: 100%;">100%</div>
+                        </div>
+                        <!-- Git -->
+                        <h5><i class="fas fa-check"></i>Git</h5>
+                        <div class="progress mb-4" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-dark" style="width: 100%;">100%</div>
+                        </div>
+                        <!-- MySQL -->
+                        <h5><i class="fas fa-check"></i>MySQL</h5>
+                        <div class="progress mb-4" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-dark" style="width: 100%;">100%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 text-center">
+                    <div class="col-12">
+                        <a href="" class="btn btn-outline-dark bt-lg text-uppercase px-5 mx-3 my-2">Hire me Now</a>
+                        <a href="assets/Resume_RuiRibeiro.pdf" class="btn btn-dark bt-lg text-uppercase px-5 mx-3 my-2" download>Download cv</a> <!-- Download CV-->
+                    </div>
+                </div>
+            </div>
+         </section>
 
         <!-- Portfolio Section -->
         <section id="portfolio" class="container-fluid my-5 py-5 bg-light">
@@ -226,6 +305,9 @@
             </div>
         </div>
     </div>
+
+    <!-- Button for scrolling to the top -->
+    <a href="#" class="scroll-to-top bi bi-arrow-up-square-fill" title="Go to top"></a>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
