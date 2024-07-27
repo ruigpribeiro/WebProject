@@ -46,7 +46,6 @@
                             <a class="nav-link ml-5 mr-5" href="#portfolio" title="Portfolio">Portfolio</a>
                         </li>
                     </ul>
-                    <a href="#" class="btn btn-contact contact text-dark" data-bs-toggle="modal" data-bs-target="#contactModal" title="Contact Me">Contact me</a>
                 </div>
             </div>
         </nav>
@@ -175,8 +174,8 @@
                 </div>
                 <div class="row mt-5 text-center">
                     <div class="col-12">
-                        <a href="" class="btn btn-outline-dark bt-lg text-uppercase px-5 mx-3 my-2">Hire me Now</a>
-                        <a href="assets/Resume_RuiRibeiro.pdf" class="btn btn-dark bt-lg text-uppercase px-5 mx-3 my-2" download>Download cv</a> <!-- Download CV-->
+                        <a href="#" class="btn btn-outline-dark bt-lg text-uppercase px-5 mx-3 my-2" data-bs-toggle="modal" data-bs-target="#contactModal" title="Hire me now">Hire me Now</a> <!-- Modal com Formulário -->
+                        <a href="assets/Resume_RuiRibeiro.pdf" class="btn btn-dark bt-lg text-uppercase px-5 mx-3 my-2" download>Download CV</a> <!-- Download CV-->
                     </div>
                 </div>
             </div>
@@ -251,8 +250,68 @@
             </div>
         </section>
 
+        <!-- Contact Me Section -->
+        <section id="contactMe" class="container-fluid mb-3">
+            <div class="container">
+                <div class="row">
+                    <!-- Div Column -->
+                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <p>fsdfdsfdsfs</p>
+                    </div>
+                    <!-- Form Column -->
+                    <div class="col-md-8">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
     </main>
+
+    
+    <!-- Modal do contact me -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Subtmit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-center text-white w-100">
@@ -275,39 +334,7 @@
         </div>
     </footer>
 
-    <!-- Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="contactModalLabel">Contact Form</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Contact Form -->
-                    <form id="contactForm" action="submit.php" method="POST">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                        </div>
-                        <div class="invalid-feedback">Invalid email</div>
-                        <div class="valid-feedback">Correct email</div>
-                        <button type="submit" class="btn btn-dark">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Button for scrolling to the top -->
+    <!-- Button para dar scrolling para o topo da página -->
     <a href="#" class="scroll-to-top bi bi-arrow-up-square-fill" title="Go to top"></a>
 
     <!-- Bootstrap JavaScript -->

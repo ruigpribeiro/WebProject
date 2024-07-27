@@ -1,31 +1,42 @@
+:root {
+    /* Cores */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-dark-grey: #212529;
+    --color-light-grey: #f0f0f0;
+    --color-bg-light: #f8f9fa;
+
+    /* Fontes */
+    --font-primary: 'Poppins', sans-serif;
+
+}
+
+/* HTML e Body */
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: var(--font-primary) !important;
 }
+
+
 /* Navigation Bar */
 nav a {
     color: white !important;
 }
+
 nav img {
     height: 30px;
     width: 30px;
 }
 
-.btn-contact, .b {
-    background-color: white;
-    color: #212529;
-    border-color: white;
-}
-.btn-contact:hover {
-    background-color: #f0f0f0;
-    color: #212529;
-    border-color: #f0f0f0;
+.nav-link:hover {
+    color: #fcc100bb !important;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Home Page */
+/* Home Section */
 main img {
     width: 60%;
 }
@@ -75,25 +86,29 @@ main img {
 /* Footer */
 
 
-/* Scroll Button */
-.scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    font-size: 50px;
-    color: #000000;
-    z-index: 1000;
-    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
-}
+/* Button Scroll */
 
-.scroll-to-top.show {
-    display: inline-block;
-    opacity: 0.8;
-}
-
-.scroll-to-top.hide {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(100%);
+/*Apenas mostrar o scroll to top em desktops ou ecrãs maiores */
+@media (min-width: 992px) {
+    .scroll-to-top {
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        display: none;
+        font-size: 50px;
+        color: black;
+        z-index: 1000;
+        transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    }
+    
+    .scroll-to-top.show {
+        display: inline-block;
+        opacity: 0.8;
+    }
+    
+    .scroll-to-top.hide {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(100%);
+    }
 }
