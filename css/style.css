@@ -60,6 +60,12 @@ main img {
 
 
 /* About me Section */
+
+/* Adjust the scroll position for fixed navbar */
+section {
+    scroll-margin-top: 60px; /* Adjust this value to match the height of your navbar */
+}
+
 #about-me {
     background-color: #f8f9fa; 
     min-width: 100%;
@@ -80,6 +86,13 @@ main img {
 
 .card:hover {
     transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 

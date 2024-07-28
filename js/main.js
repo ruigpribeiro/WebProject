@@ -1,13 +1,3 @@
-const form = document.querySelector("form")
-
-form.addEventListener('submit', e => {
-    if (!form.checkValidity()) {
-        e.preventDefault()
-    }
-    
-    form.classList.add('was-validated')
-})
-
 /* Hello World Landing Page */
 const text = "HELLO, WORLD! ";
 let index = 0;

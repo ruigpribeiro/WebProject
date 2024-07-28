@@ -6,7 +6,7 @@
     <title>Portfolio</title>
 
     <!-- Icon no separador do site -->
-    <link rel="icon" href="img/landing-img.png">
+    <link rel="icon" href="img/logo/logo.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container container-nav">
                 <a class="navbar-brand" href="/">
-                    <img src="img/landing-img.png" alt="logo">
+                    <img src="img/logo/logo.png" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,13 +37,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active mr-5" href="index.html" title="Home">Home</a>
+                            <a class="nav-link active mr-5" href="#home" title="Home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link ml-5 mr-5" href="#about-me" title="About me">About me</a>
                         </li>                        
                         <li class="nav-item">
                             <a class="nav-link ml-5 mr-5" href="#portfolio" title="Portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ml-5 mr-5" href="#contact" title="Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -55,10 +58,10 @@
     <main class="container-fluid min-vh-100 d-flex flex-grow-1 flex-column justify-content-center align-items-center text-center">
 
         <!-- Landing page -->
-        <div class="container hero d-flex text-center justify-content-center">
+        <div class="container hero d-flex text-center justify-content-center" id="home">
             <div class="row mt-5">
                 <div class="col-lg-4 foto_principal">
-                    <img src="img/landing-img.png" alt="Rui" class="img-fluid">
+                    <img src="img/logo/logo.png" alt="Rui" class="img-fluid">
                 </div>
                 <div class="col-lg-8 text-center title-holder mt-4">
                     <h2 class="hello d-none d-lg-block">
@@ -74,7 +77,8 @@
             </div>
         </div>
 
-        <section id="about" class="about bg-light py-5">
+        <!-- About Me Section -->
+        <section id="about-me" class="about bg-light py-5">
             <div class="container">
                 <div class="text-center">
                     <h4 class="text-uppercase fw-bold text-dark">About Me</h4>
@@ -91,7 +95,7 @@
         </section>
 
         <!-- Profile e Skills Section -->
-         <section class="profile my-6" id="about-me">
+         <section class="profile my-6" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -120,7 +124,7 @@
                                 <h5 class="text-transform">
                                     <i class="fas fa-home text-dark"> Github:</i>
                                 </h5>
-                                <p>github.com/ruigpribeiro</p>
+                                <a class="text-dark" href="https://github.com/ruigpribeiro" target="_blank">github.com/ruigpribeiro</a>
                             </li>
                             <li class="list-group-item mb-3">
                                 <h5 class="text-transform">
@@ -184,55 +188,59 @@
         <!-- Portfolio Section -->
         <section id="portfolio" class="container-fluid my-5 py-5 bg-light">
             <div class="container">
-                <h2 class="text-center mb-4">My Portfolio</h2>
+                <div class="text-center">
+                    <h4 class="text-uppercase fw-bold text-dark">My Portfolio</h4>
+                    <hr class="w-25 mx-auto"/>
+                    <h2 class="mb-5">Have a look at some of my projects.</h2>
+                </div>
                 <div class="row">
                     <!-- Project 1 -->
                     <div class="col-md-4 mb-4">
                         <div class="card shadow-sm">
-                            <img src="img/apple.jpeg" class="card-img-top" alt="Project 1">
+                            <img src="img/projects/la_fruit_muy_loca.jpg" class="card-img-top" alt="Project 1">
                             <div class="card-body">
-                                <h5 class="card-title">Project Title 1</h5>
-                                <p class="card-text">Built with: HTML, CSS, JavaScript</p>
+                                <h5 class="card-title">La Fruit Muy Loca</h5>
+                                <p class="card-text">Built with: Java</p>
                             </div>
                         </div>
                     </div>
                     <!-- Project 2 -->
                     <div class="col-md-4 mb-4">
                         <div class="card shadow-sm">
-                            <img src="img/apple.jpeg"" class="card-img-top" alt="Project 2">
+                            <img src="img/projects/sniper_elite.jpeg"" class="card-img-top" alt="Project 2">
                             <div class="card-body">
-                                <h5 class="card-title">Project Title 2</h5>
-                                <p class="card-text">Built with: React, Node.js</p>
+                                <h5 class="card-title">Sniper Elite</h5>
+                                <p class="card-text">Built with: Java</p>
                             </div>
                         </div>
                     </div>
                     <!-- Project 3 -->
                     <div class="col-md-4 mb-4">
                         <div class="card shadow-sm">
-                            <img src="img/apple.jpeg"" class="card-img-top" alt="Project 3">
+                            <img src="img/projects/beautiful_chat.jpg"" class="card-img-top" alt="Project 3">
                             <div class="card-body">
-                                <h5 class="card-title">Project Title 3</h5>
-                                <p class="card-text">Built with: Bootstrap, PHP</p>
+                                <h5 class="card-title">Beautiful Chat</h5>
+                                <p class="card-text">Built with: Java</p>
                             </div>
                         </div>
                     </div>
                     <!-- Project 4 -->
                     <div class="col-md-4 mb-4">
                         <div class="card shadow-sm">
-                            <img src="img/apple.jpeg"" class="card-img-top" alt="Project 4">
+                            <img src="img/projects/arabian_nights.png"" class="card-img-top" alt="Project 4">
                             <div class="card-body">
-                                <h5 class="card-title">Project Title 4</h5>
-                                <p class="card-text">Built with: JavaScript, CSS</p>
+                                <h5 class="card-title">Arabic Nights</h5>
+                                <p class="card-text">Built with: Java</p>
                             </div>
                         </div>
                     </div>
                     <!-- Project 5 -->
                     <div class="col-md-4 mb-4">
                         <div class="card shadow-sm">
-                            <img src="img/apple.jpeg"" class="card-img-top" alt="Project 5">
+                            <img src="img/projects/seaquest.png"" class="card-img-top" alt="Project 5">
                             <div class="card-body">
-                                <h5 class="card-title">Project Title 5</h5>
-                                <p class="card-text">Built with: React, Bootstrap</p>
+                                <h5 class="card-title">SeaQuest</h5>
+                                <p class="card-text">Built with: HTML, CSS, JavaScript and Bootstrap</p>
                             </div>
                         </div>
                     </div>
@@ -251,15 +259,20 @@
         </section>
 
         <!-- Contact Me Section -->
-        <section id="contactMe" class="container-fluid mb-3">
+        <section id="contact" class="container-fluid mb-3">
             <div class="container">
                 <div class="row">
+                    <div class="text-center">
+                        <h4 class="text-uppercase fw-bold text-dark">Contact Me</h4>
+                        <hr class="w-25 mx-auto"/>
+                        <h2 class="mb-5">Fill the form below.</h2>
+                    </div>
                     <!-- Div Column -->
-                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <div class="col-md-4 mt-4 d-none d-md-flex align-items-center justify-content-center">
                         <p>fsdfdsfdsfs</p>
                     </div>
                     <!-- Form Column -->
-                    <div class="col-md-8">
+                    <div class="col-md-8 mt-4">
                         <form>
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
@@ -280,9 +293,7 @@
             </div>
         </section>
 
-
     </main>
-
     
     <!-- Modal do contact me -->
     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
@@ -318,14 +329,18 @@
         <div class="p-3 pb-0 mb-0">
 
             <!-- Social Media -->
-            <section class="mb-1">
+            <section class="mb-2 mt-2">
                 <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/ruiguilhermeribeiro/" target="_blank" role="button">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
                 <!-- Github Github-->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/ruigpribeiro/" target="_blank" role="button">
                     <i class="fab fa-github"></i>
+                </a>
+                <!-- Instagram-->
+                <a class="btn btn-outline-light btn-floating m-1" href="instagram.com" target="_blank" role="button">
+                    <i class="fab fa-instagram"></i>
                 </a>
             </section>
         </div>
