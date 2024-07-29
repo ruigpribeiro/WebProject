@@ -37,8 +37,9 @@ nav img {
 }
 
 /* Home Section */
-main img {
-    width: 60%;
+.landing-img {
+    width: 100%;
+    border-radius: 50%;
 }
 
 .hero {
@@ -95,5 +96,17 @@ section {
     object-position: center;
 }
 
+.carousel-image {
+    height: 200px; 
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Contact Me Section */
+.contact-img {
+    height: 250px;
+    width: auto;
+}
 
 /* Footer */
