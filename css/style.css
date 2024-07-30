@@ -5,11 +5,12 @@
     --color-dark-grey: #212529;
     --color-light-grey: #f0f0f0;
     --color-bg-light: #f8f9fa;
+    --color-linkhover: #fcc100bb;
 
     /* Fontes */
     --font-primary: 'Poppins', sans-serif;
-
 }
+
 
 /* HTML e Body */
 html {
@@ -21,7 +22,7 @@ body {
 }
 
 
-/* Navigation Bar */
+/* NavBar */
 nav a {
     color: white !important;
 }
@@ -31,41 +32,43 @@ nav img {
 }
 
 .nav-link:hover {
-    color: #fcc100bb !important;
+    color: var(--color-linkhover) !important;
     transition: background-color 0.3s, color 0.3s;
 }
+
 
 /* Landing page Section */
 .landing-img {
     width: 100%;
     height: auto;
     border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    object-fit: cover;
 }
 
 @media (max-width: 576px) {
     .landing-img {
-      width: 50%;
+        width: 50%;
     }
   }
 
-  @media (min-width: 576px) and (max-width: 768px) { 
+@media (min-width: 576px) and (max-width: 768px) { 
     .landing-img {
         width: 50%;
-      }
-  }
+    }
+}
 
-  @media (min-width: 768px) and (max-width: 992px) { 
+@media (min-width: 768px) and (max-width: 992px) { 
     .landing-img {
         width: 50%;
-      }
+    }
   }
-
 
 .hero {
     height: 70vh; 
     align-items: center; 
 }
-
 
 .cursor {
     display: inline-block;
@@ -81,6 +84,10 @@ nav img {
 
 
 /* About me Section */
+.about-span {
+    font-size: 25px;
+    font-weight: 600;
+}
 
 section {
     scroll-margin-top: 60px;
@@ -99,9 +106,17 @@ section {
     flex-direction: column;
 }
 
+.about-text {
+    text-align: justify !important;
+    line-height: 0.9cm;
+  }
+
+
 /* Portfolio Section */
 .card {
     transition: transform 0.2s;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .card:hover {
@@ -129,4 +144,7 @@ section {
     width: auto;
 }
 
-/* Footer */
+/* Contact e Footer */
+.foo-img i:hover {
+    color: var(--color-linkhover);
+}
