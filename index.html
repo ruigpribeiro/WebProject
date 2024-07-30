@@ -13,9 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
@@ -27,26 +24,28 @@
     <!-- Navigation Bar -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container container-nav">
+            <div class="container">
+                <!-- Logo Navbar -->
                 <a class="navbar-brand" href="/">
                     <img src="img/logo/logo.png" alt="logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Links Navbar -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active mr-5" href="#home" title="Home">Home</a>
+                            <a class="nav-link active" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ml-5 mr-5" href="#about-me" title="About me">About me</a>
+                            <a class="nav-link" href="#about-me">About me</a>
                         </li>                        
                         <li class="nav-item">
-                            <a class="nav-link ml-5 mr-5" href="#portfolio" title="Portfolio">Portfolio</a>
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ml-5 mr-5" href="#contact" title="Contact">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -55,24 +54,22 @@
     </header> 
         
     <!-- Conteúdo da Página-->
-    <main class="container-fluid min-vh-100 d-flex flex-grow-1 flex-column justify-content-center align-items-center text-center">
+    <main class="container-fluid d-flex flex-grow-1 flex-column justify-content-center align-items-center text-center">
 
         <!-- Landing page -->
-        <div class="container hero d-flex text-center justify-content-center" id="home">
+        <div class="container hero d-flex text-center align-items-center justify-content-center" id="home">
             <div class="row mt-5">
-                <div class="col-lg-4 foto_principal">
-                    <img src="img/landing-page/photo.jpg" alt="Rui" class="img-fluid landing-img">
+                <!-- Imagem Landing Page -->
+                <div class="col-lg-4">
+                    <img src="img/landing-page/photo.jpg" alt="Rui Photo" class="img-fluid landing-img">
                 </div>
-                <div class="col-lg-8 text-center title-holder mt-4">
+                <!-- Texto Landing Page -->
+                <div class="col-lg-8 text-center mt-4 d-flex flex-column justify-content-center">
                     <h2 class="hello d-none d-lg-block">
                         <span id="typed-text"></span><span class="cursor">|</span>
                     </h2>                    
-                    <div class="col-lg-12">
-                        <h1>My name is <strong>Rui Ribeiro</strong></h1>
-                    </div>
-                    <div class="col-lg-12">
-                        <h4 class="junior">I'm a Junior Software Developer.</h4>
-                    </div>
+                    <h1>My name is <strong>Rui Ribeiro</strong></h1>
+                    <h4 class="junior">I'm a Junior Software Developer.</h4>
                 </div>
             </div>
         </div>
@@ -85,8 +82,7 @@
                     <hr class="w-25 mx-auto"/>
                     <h2 class="mb-4">Let me introduce myself.</h2>
                 </div>
-                <div class="about-content d-flex gap-5 align-items-center h-100">
-                    <img src="img/landing-img.png" alt="" class="about-img img-fluid rounded-circle">
+                <div class="about-content d-flex gap-5 align-items-center">
                     <p class="lead">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos soluta odio possimus quod quam, aliquid facilis neque quasi debitis quisquam optio quibusdam ipsum in qui deleniti sit aspernatur nobis tenetur.
                     </p>
@@ -95,41 +91,32 @@
         </section>
 
         <!-- Profile e Skills -->
-         <section class="profile my-5" id="about">
+        <section class="profile my-5" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <h3 class="text-uppercase fw-bold">Profile</h3>
-                        <p>Here is some more info about myself to help you get to know me better</p>
+                        <p>Here is some more info about myself to help you get to know me better.</p>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item mb-3">
-                                <h5 class="text-transform">
-                                    <i class="fas fa-user text-dark"> Full Name:</i>
-                                </h5>
+                                <h5><i class="fa fa-user text-dark"></i> Full Name:</h5>
                                 <p>Rui Ribeiro</p>
                             </li>
                             <li class="list-group-item mb-3">
-                                <h5 class="text-transform">
-                                    <i class="fas fa-calendar text-dark"> Birth Date:</i>
-                                </h5>
+                                <h5><i class="fa fa-calendar text-dark"></i> Birth Date:</h5>
                                 <p>August, 1997</p>
                             </li>
                             <li class="list-group-item mb-3">
-                                <h5 class="text-transform">
-                                    <i class="fas fa-building text-dark"> Current Position:</i>
-                                </h5>
+                                <h5><i class="fa fa-briefcase text-dark"></i> Current Position:</h5>
                                 <p>Student - Software Developer</p>
                             </li>
                             <li class="list-group-item mb-3">
-                                <h5 class="text-transform">
-                                    <i class="fas fa-home text-dark"> Github:</i>
-                                </h5>
-                                <a class="text-dark" href="https://github.com/ruigpribeiro" target="_blank">github.com/ruigpribeiro</a>
+                                <h5><i class="fa fa-house text-dark"></i> Github:</h5>
+                                <a href="https://github.com/ruigpribeiro" target="_blank"
+                                    class="text-dark">github.com/ruigpribeiro</a>
                             </li>
                             <li class="list-group-item mb-3">
-                                <h5 class="text-transform">
-                                    <i class="fas fa-envelope text-dark"> Email:</i>
-                                </h5>
+                                <h5><i class="fa fa-envelope text-dark"></i> Email:</h5>
                                 <p>ruiguilhermeribeiro@gmail.com</p>
                             </li>
                         </ul>
@@ -141,49 +128,57 @@
                         <p>Here is a list of my skills with these dumb percentages</p>
                         <!-- Java -->
                         <h5><i class="fas fa-check"></i>Java</h5>
-                        <div class="progress mb-4" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar bg-dark" style="width: 100%;">100%</div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                                aria-valuemin="0" aria-valuemax="100">100%</div>
                         </div>
                         <!-- HTML & CSS -->
                         <h5><i class="fas fa-check"></i>HTML & CSS</h5>
-                        <div class="progress mb-4" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar bg-dark" style="width: 100%;">100%</div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                                aria-valuemin="0" aria-valuemax="100">100%</div>
                         </div>
                         <!-- Bootstrap -->
                         <h5><i class="fas fa-check"></i>Bootstrap</h5>
-                        <div class="progress mb-4" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar bg-dark" style="width: 10%;">10%</div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 10%;" aria-valuenow="10"
+                                aria-valuemin="0" aria-valuemax="100">10%</div>
                         </div>
                         <!-- JavaScript -->
                         <h5><i class="fas fa-check"></i>JavaScript</h5>
-                        <div class="progress mb-4" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar bg-dark" style="width: 100%;">100%</div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                                aria-valuemin="0" aria-valuemax="100">100%</div>
                         </div>
                         <!-- PHP -->
                         <h5><i class="fas fa-check"></i>PHP</h5>
-                        <div class="progress mb-4" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar bg-dark" style="width: 100%;">100%</div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                                aria-valuemin="0" aria-valuemax="100">100%</div>
                         </div>
                         <!-- Git -->
                         <h5><i class="fas fa-check"></i>Git</h5>
-                        <div class="progress mb-4" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar bg-dark" style="width: 100%;">100%</div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                                aria-valuemin="0" aria-valuemax="100">100%</div>
                         </div>
                         <!-- MySQL -->
                         <h5><i class="fas fa-check"></i>MySQL</h5>
-                        <div class="progress mb-4" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar bg-dark" style="width: 100%;">100%</div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                                aria-valuemin="0" aria-valuemax="100">100%</div>
                         </div>
                     </div>
                 </div>
                 <div class="row mt-5 text-center">
                     <div class="col-12">
-                        <a href="#" class="btn btn-outline-dark bt-lg text-uppercase px-5 mx-3 my-2" data-bs-toggle="modal" data-bs-target="#contactModal" title="Hire me now">Hire me Now</a> <!-- Modal com Formulário -->
-                        <a href="assets/Resume_RuiRibeiro.pdf" class="btn btn-dark bt-lg text-uppercase px-5 mx-3 my-2" download>Download CV</a> <!-- Download CV-->
+                        <a href="#" class="btn btn-outline-dark text-uppercase px-5 mx-3 my-2" data-bs-toggle="modal"
+                            data-bs-target="#contactModal">Hire me Now</a>
+                        <a href="#" class="btn btn-dark text-uppercase px-5 mx-3 my-2">Download my CV</a>
                     </div>
                 </div>
             </div>
-         </section>
+        </section>
 
         <!-- Portfolio Section -->
         <section id="portfolio" class="container-fluid my-5 py-5 bg-light">
@@ -423,9 +418,9 @@
 
     </main>
     
-    <!-- Modal do contact me -->
+    <!-- Contact Me Section -->
     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
@@ -445,35 +440,32 @@
                             <label for="message" class="form-label">Message</label>
                             <textarea class="form-control" id="message" rows="3" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-dark">Subtmit</button>
+                        <button type="submit" class="btn btn-dark">Send Message</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-center text-white w-100">
-        <div class="p-3 pb-0 mb-0">
-
-            <!-- Social Media -->
-            <section class="mb-2 mt-2">
-                <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/ruiguilhermeribeiro/" target="_blank" role="button">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <!-- Github Github-->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/ruigpribeiro/" target="_blank" role="button">
-                    <i class="fab fa-github"></i>
-                </a>
-                <!-- Instagram-->
-                <a class="btn btn-outline-light btn-floating m-1" href="instagram.com" target="_blank" role="button">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </section>
+     <!-- Contact Section -->
+     <section class="contact bg-light py-3" id="contact">
+        <div class="container text-center">
+            <p class="lead">Feel free to reach out to me!</p>
+            <div class="d-flex justify-content-center">
+                <a href="https://www.linkedin.com/in/ruiguilhermeribeiro/" target="_blank"
+                    class="text-dark me-3"><i class="fa fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/ruigpribeiro" target="_blank" class="text-dark me-3"><i
+                        class="fa fa-github fa-2x"></i></a>
+                <a href="https://twitter.com/" target="_blank" class="text-dark"><i
+                        class="fa fa-instagram fa-2x"></i></a>
+            </div>
         </div>
-        <div class="text-center">
-            <p class="mb-0 fs-6">Coded by Rui Ribeiro 👨‍💻</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-light">
+        <div class="container">
+            <p class="mb-0">Coded by &copy; 2024 Rui Ribeiro 👨‍💻</p>
         </div>
     </footer>
 
