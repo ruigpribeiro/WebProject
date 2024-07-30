@@ -62,9 +62,8 @@ nav img {
 
 /* About me Section */
 
-/* Adjust the scroll position for fixed navbar */
 section {
-    scroll-margin-top: 60px; /* Adjust this value to match the height of your navbar */
+    scroll-margin-top: 60px;
 }
 
 #about-me {
@@ -102,6 +101,7 @@ section {
     object-fit: cover;
     object-position: center;
 }
+
 
 /* Contact Me Section */
 .contact-img {
