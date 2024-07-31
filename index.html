@@ -19,7 +19,7 @@
     <!-- O meu CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="">
+<body>
 
     <!-- Navigation Bar -->
     <header class="sticky-top">
@@ -55,7 +55,7 @@
     </header> 
         
     <!-- Conteúdo da Página-->
-    <main class="">
+    <main>
 
         <!-- Landing page -->
         <div class="container hero d-flex text-center align-items-center justify-content-center" id="home">
@@ -87,7 +87,7 @@
                     <p class="lead about-text">
                         <span class="about-span">Hey there!</span> I'm Rui, a 26-year-old junior software developer.
                         For the past four years, I've worked in hospitality, but my true passion has always been computers. 👨‍💻
-                        I've spent countless hours on my computer, whether trading, checking financial news, learning new things or just having fun. 🌎
+                        I've spent countless hours on my computer, whether working, learning new things or just having fun. 🌎
                         Ever since I was young, I've been fascinated by computers and even built my first gaming desktop during my teens. 🖥️
                         My programming journey began in 2020 during the covid pandemic when I started learning the basics of programming on my own. 📖  
                         In early 2023, I took a significant step forward and joined a full stack bootcamp, marking the real beginning of my programming career. 👨‍🎓
@@ -389,7 +389,7 @@
         </section>
 
         <!-- Contact Me Section -->
-        <section id="contact" class="container-fluid mb-5">
+        <section id="contact" class="container-fluid mb-3">
             <div class="container">
                 <div class="row">
                     <div class="text-center">
@@ -398,7 +398,7 @@
                         <h2 class="mb-5">Fill the form below. 📫</h2>
                     </div>
                     <!-- Coluna imagem -->
-                    <div class="col-12 col-md-6 mt-4 d-none d-flex d-md-flex justify-content-center">
+                    <div class="col-12 col-md-6 mt-4 d-none d-flex d-md-flex justify-content-center align-items-center">
                         <img src="img/logo/logo.png" alt="main logo" class="contact-img">
                     </div>
                     <!-- Coluna Formulário -->
@@ -416,16 +416,38 @@
                                 <label for="message" class="form-label">Message</label>
                                 <textarea class="form-control" id="message" rows="6" placeholder="Enter your message" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-dark">Submit</button>
+                            <button type="submit" class="btn btn-dark" id="message-toast">Submit</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
+
+     <!-- Social Media Section -->
+     <section class="contact bg-light py-2 mt-5" id="contact">
+        <div class="container text-center">
+            <p class="lead my-1 ">Feel free to reach out to me!</p>
+            <div class="d-flex justify-content-center">
+                <a href="https://www.linkedin.com/in/ruiguilhermeribeiro/" target="_blank"
+                class="text-dark me-3 foo-img" aria-label="LinkedIn">
+                <i class="fa fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/ruigpribeiro" target="_blank" class="text-dark me-3 foo-img" aria-label="GitHub">
+                <i class="fa fa-github fa-2x"></i></a>
+                <a href="https://twitter.com/" target="_blank" class="text-dark foo-img" aria-label="Instagram">
+                <i class="fa fa-instagram fa-2x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-light">
+        <div class="container">
+            <p class="mb-0">Coded by &copy; 2024 Rui Ribeiro 👨‍💻</p>
+        </div>
+    </footer>
     
-    <!-- Modal -->
+    <!-- Modal Form -->
     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -447,35 +469,42 @@
                             <label for="message" class="form-label">Message</label>
                             <textarea class="form-control" id="message" rows="6" placeholder="Enter your message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-dark">Send Message</button>
+                        <button type="submit" class="btn btn-dark" id="message2-toast">Send Message</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-     <!-- Contact Section -->
-    <section class="contact bg-light py-3" id="contact">
-        <div class="container text-center">
-            <p class="lead">Feel free to reach out to me!</p>
-            <div class="d-flex justify-content-center">
-                <a href="https://www.linkedin.com/in/ruiguilhermeribeiro/" target="_blank"
-                class="text-dark me-3 foo-img" aria-label="LinkedIn">
-                <i class="fa fa-linkedin fa-2x"></i></a>
-                <a href="https://github.com/ruigpribeiro" target="_blank" class="text-dark me-3 foo-img" aria-label="GitHub">
-                <i class="fa fa-github fa-2x"></i></a>
-                <a href="https://twitter.com/" target="_blank" class="text-dark foo-img" aria-label="Instagram">
-                <i class="fa fa-instagram fa-2x"></i></a>
-            </div>
+    <!-- Toast Send Message -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="img/logo/logo.png" style="width: 15px;" class="rounded me-2" alt="Main Logo">
+          <strong class="me-auto">Message Sent</strong>
+          <small>now</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
-    </section>
+        <div class="toast-body">
+          Your message has been sent.
+        </div>
+      </div>
+    </div>
 
-    <!-- Footer -->
-    <footer class="text-center py-4 bg-dark text-light">
-        <div class="container">
-            <p class="mb-0">Coded by &copy; 2024 Rui Ribeiro 👨‍💻</p>
+    <!-- Toast Submit -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="img/logo/logo.png" style="width: 15px;" class="rounded me-2" alt="Main Logo">
+            <strong class="me-auto">Message Sent</strong>
+            <small>now</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Your message has been sent.
+          </div>
         </div>
-    </footer>
+      </div>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
