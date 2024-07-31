@@ -39,7 +39,7 @@
         <!-- Profile & Skills -->
         <sec class="profile my-5" id="about">
             <?php include 'partials/profile.php'; ?>
-            <?php include 'partials/about.php'; ?>
+            <?php include 'partials/skills.php'; ?>
         </section>
 
         <!-- Projects -->
@@ -55,6 +55,65 @@
 
     <!-- Footer -->
     <?php include 'partials/footer.php'; ?>
+
+    <!-- Modal Form -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control"  id="name" placeholder="Enter your name" required >
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="6" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark" id="message2-toast">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Send Message -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="img/logo/logo.png" style="width: 15px;" class="rounded me-2" alt="Main Logo">
+          <strong class="me-auto">Message Sent</strong>
+          <small>now</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Your message has been sent.
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Submit -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="img/logo/logo.png" style="width: 15px;" class="rounded me-2" alt="Main Logo">
+            <strong class="me-auto">Message Sent</strong>
+            <small>now</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Your message has been sent.
+          </div>
+        </div>
+      </div>
 
 
     <!-- Bootstrap JavaScript -->
